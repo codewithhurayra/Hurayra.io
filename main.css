@@ -1,0 +1,183 @@
+/* General Body Styling */
+body {
+  padding-right: 40px;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Overlay effect */
+  url(m1.png) no-repeat center center/cover; /* Background image */
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+  min-height: 50vh;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centering links */
+  align-items: center;
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: slideDown 1s ease-in-out; /* Slide-in animation */
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: center; /* Centering links */
+  gap: 30px; /* Adding space between links */
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin: 0 15px;
+  transition: color 0.3s ease, transform 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #e60000;
+  transform: scale(1.1);
+}
+/* Basic Reset */
+body, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: rgb(84, 112, 221);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #6a11cb;
+}
+
+/* Profile Header */
+.profile-header {
+  text-align: center;
+  margin: 120px auto 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.profile-img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 4px solid #0073e6;
+  margin-bottom: 20px;
+  animation: scaleUp 1s ease-in-out; /* Scale-up animation */
+}
+
+.profile-name {
+  font-size: 2.5em;
+  margin: 10px 0;
+  animation: slideUp 1.5s ease-in-out;
+}
+
+.profile-bio {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 10px auto;
+  max-width: 600px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Social Media Icons */
+/* Social Media Icons */
+.container {
+  font-size: larger;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.icon a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  animation: slideUp 2s ease-in-out;
+}
+
+.icon a:hover {
+  color: red;
+}
+
+.icon a {
+  margin: 0 16px;
+  color: white;
+  font-size: 20px; /* Increased icon size */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.icon a:hover {
+  color: red;
+  transform: scale(1.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+      transform: translateY(-100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+      transform: scale(0.8);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
