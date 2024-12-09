@@ -4,8 +4,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #e3ffe7, #d9e7ff);
-    color: #333;
+    background: linear-gradient(to right, #000000, #933dbb);
+    color: #ffffff;
     animation: fadeIn 2s ease-in;
 }
 
@@ -35,9 +35,9 @@ body {
     padding: 20px;
     max-width: 800px;
     margin: 50px auto;
-    background: white;
+    background: #3d6bbb;
     border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 15px rgba(94, 30, 30, 0.205);
     animation: slideUp 1s ease-out;
 }
 
@@ -49,7 +49,7 @@ h1 {
 
 h2 {
     text-align: center;
-    color: #333;
+    color: #a51a1a;
     margin-bottom: 20px;
 }
 
@@ -64,6 +64,48 @@ p {
     color: #4CAF50;
     animation: pulse 2s infinite;
 }
+/* Social Media Icons */
+.container {
+  font-size: larger;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.icon a {
+  margin: 13px 15px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  animation: slideUp 2s ease-in-out;
+
+}
+
+.icon a:hover {
+  color: red;
+}
+
+.icon a {
+  margin: 0 16px;
+  color: white;
+  font-size: 20px; /* Increased icon size */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.icon a:hover {
+  color: red;
+  transform: scale(2.3);
+}
+footer {
+    margin-top: 79px;
+    padding: 6px;
+  }
+  
+  footer p {
+    margin: 4px;
+    color: white;
+    font-size: 16px;
+    animation: slideUp 2s ease-in-out;
+  }
 
 /* Animations */
 
